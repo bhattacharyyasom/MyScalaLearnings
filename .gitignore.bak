@@ -1,0 +1,21 @@
+# Folders
+.gradle/
+.settings/
+bin/
+build/
+.idea/
+.metadata/
+classes/
+
+# General Files
+.checkstyle
+.classpath
+.pmd
+.project
+.springBeans
+*.iml
+*.log
+
+# Specific Files
+
+
