@@ -38,5 +38,5 @@ object DI extends App{
   val wiredObject1 = new service with concreteDAO1
   wiredObject1.updateRecords("RECORD2")
   println(wiredObject1.getRecords)
-  
+ 
 }

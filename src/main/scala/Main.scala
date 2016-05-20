@@ -40,7 +40,7 @@ object Main extends App{
     val value=a
   }    
   
-  //def sum[M[_],T](xs:M[T])(implicit monoid:Monoid[T],foldLeft:FoldLeft[M]):T = foldLeft.foldLeft(xs,monoid.mzero,monoid.mappend)
+  def sum[M[_],T](xs:M[T])(implicit monoid:Monoid[T],foldLeft:FoldLeft[M]):T = foldLeft.foldLeft(xs,monoid.mzero,monoid.mappend)
   
   /*def plus[A](a:A,b:A)(implicit monoid:Monoid[A]):A={
     monoid.mappend(a, b)
@@ -48,8 +48,8 @@ object Main extends App{
   //  Test Area
   //implicit val intMonoid = IntMonoid // In scope now
   //implicit val stringMonoid = StringMonoid
-  //Console.println(sum(List(1,2,3,4)))
-  //Console.println(sum(List("a","b","c","d")))
-  //Console.println(sum(List(1,2,3,4)))
+  Console.println(sum(List(1,2,3,4)))
+  Console.println(sum(List("a","b","c","d")))
+  Console.println(sum(List(1,2,3,4)))
   println(2.|+|(3))
 }
