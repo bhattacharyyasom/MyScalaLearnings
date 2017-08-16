@@ -28,15 +28,12 @@ trait service{
   getRecords
   }
 }
-
-
 object DI extends App{
   val wiredObject = new service with concreteDAO //injecting concrete DAO to the service and calling methods
-  wiredObject.updateRecords("RECORD1")
-  println(wiredObject.getRecords)
+  wiredObject.updateRecordsViaDAO("RECORD1")
+  println(wiredObject.getRecordsViaDAO)
   
   val wiredObject1 = new service with concreteDAO1
-  wiredObject1.updateRecords("RECORD2")
-  println(wiredObject1.getRecords)
- 
+  wiredObject1.updateRecordsViaDAO("RECORD2")
+  println(wiredObject1.getRecordsViaDAO)
 }
